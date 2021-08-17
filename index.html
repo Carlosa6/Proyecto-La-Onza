@@ -23,21 +23,21 @@
             <h1>Compañía Minera La Onza S.A.</h1>
             <ul class="nav-menu">
                 <li>
-                    <a class="menu" href="#inicio">Inicio</a>
+                    <a data-translate="inicio" class="menu" href="#inicio">Inicio</a>
                 </li>
                 <li>
-                    <a class="menu" href="#compania">Compañía</a>
+                    <a class="menu" data-translate="compania" href="#compania">Compañía</a>
                 </li>
                 <li>
-                    <a class="menu" href="#historia">Historia</a>
+                    <a class="menu" href="#historia" data-translate="historia">Historia</a>
                 </li>
                 <li>
-                    <a class="menu" href="#actualidad">Actualidad</a>
+                    <a class="menu" href="#actualidad" data-translate="actualidad">Actualidad</a>
                 </li>
                 <li>
-                    <a class="menu" href="#contactanos">Contáctanos</a>
+                    <a class="menu" href="#contactanos" data-translate="contactanos">Contáctanos</a>
                 </li>
-                <button onclick="change_lang()">Ingles</button>
+                <button onclick="change_lang()" id="idioma">Eng</button>
             </ul>
         </nav>
         <hr>
@@ -75,7 +75,7 @@
         <br>
         <section class="cards-banner-one" id="historia">
             <div class="content">
-                <h2>Historia</h2>
+                <h2>Proyecto La Onza</h2>
                 <p data-translate="greet">La Onza es un proyecto minero que inició el año 2016 con el cateo de 11 vetas mineralizadas, llegando
                     a 25 en la actualidad. Se ubica en el departamento de La Libertad, provincia de Pataz, distrito de
                     Tayabamba, comunidad campesina La Victoria, dentro de la unidad geotectónica de la Cordillera
@@ -86,29 +86,36 @@
         <br>
         <section class="cards-banner-two" id="actualidad">
             <div class="content">
-                <h2>Actualidad</h2>
-                <p data-translate="greet2">En la actualidad La Onza se encuentra en la fase de prefactibilidad (exploración local), durante la
+                <h2 data-translate="actualidad">Actualidad</h2>
+                <p data-translate="greet21">En la actualidad La Onza se encuentra en la fase de prefactibilidad (exploración local), durante la
                     cual se realizó:</p>
                 <ul class="list-actualidad">
-                    <li data-translate="greet2">Cartografiado geológico a escala local, a lo largo de 730 hectáreas;</li>
-                    <li data-translate="greet2">Muestreo de rocas en superficie a lo largo de 1600 hectáreas, cateos mineros y sondajes
+                    <li data-translate="greet22">Cartografiado geológico a escala local, a lo largo de 730 hectáreas;</li>
+
+                    <li data-translate="greet23">Muestreo de rocas en superficie a lo largo de 1600 hectáreas, cateos mineros y sondajes
                         diamantinos, obteniendo un total de 637 muestras (incluye 52 muestras QA/QC), identificando
                         vetas mineralizadas con valores de hasta 105,65 g/t Au @ 0,50 m (muestra 8534);</li>
-                    <li data-translate="greet2">Levantamiento topográfico de un área aproximada de 9000 m2 (incluyendo cateos mineros) y
+
+                    <li data-translate="greet24">Levantamiento topográfico de un área aproximada de 9000 m2 (incluyendo cateos mineros) y
                         sensores remotos de un área aproximada de 21 km2;</li>
-                    <li data-translate="greet2">Pruebas metalúrgicas, de dos grupos de muestras, uno de óxidos y otro de sulfuros,
+
+                    <li data-translate="greet25">Pruebas metalúrgicas, de dos grupos de muestras, uno de óxidos y otro de sulfuros,
                         obteniendo en ambos casos recuperaciones de entre 83 y 91%, con un consumo óptimo de reactivos;
                     </li>
-                    <li data-translate="greet2">Geofísica, usando los métodos de polarización inducida y magnetometría, a lo largo de
+
+                    <li data-translate="greet26">Geofísica, usando los métodos de polarización inducida y magnetometría, a lo largo de
                         10,5 km (21 líneas de 500 m), a partir de la cual se identificaron posibles zonas de interés que
                         sirvieron para definir el programa de perforación diamantina;</li>
-                    <li data-translate="greet2">Perforación de 3 sondajes diamantinos, con 1120 m perforados en total, reconociendo vetas
+
+                    <li data-translate="greet27">Perforación de 3 sondajes diamantinos, con 1120 m perforados en total, reconociendo vetas
                         mineralizadas con valores de hasta 6,7 g/t Au @ 0,55 m (muestra 8651 del sondaje DDH-LO18-01);
                     </li>
-                    <li data-translate="greet2">Espectrometría con TerraSpec de 42 muestras de roca alterada, obteniendo como resultado
+
+                    <li data-translate="greet28">Espectrometría con TerraSpec de 42 muestras de roca alterada, obteniendo como resultado
                         la marcada presencia de alteración clorítica y en menor grado carbonatización, silicificación y
                         sericitización;</li>
-                    <li data-translate="greet2">Petromineragrafía de muestras de sondajes, dentro la cual se consideró el estudio
+
+                    <li data-translate="greet29">Petromineragrafía de muestras de sondajes, dentro la cual se consideró el estudio
                         mineragráfico de 4 muestras con las que se definió la paragénesis, soportada por los
                         coeficientes de correlación de Pearson, y el estudio petrográfico de 4 muestras con las que se
                         clasificó a las rocas metamórficas como neis y se identificó la alteración sericítica de las
@@ -117,7 +124,7 @@
             </div>
         </section>
         <section class="social" id="contactanos">
-            <h2>Contáctanos</h2>
+            <h2 data-translate="contactanos">Contáctanos</h2>
             <div class="links">
                 <a href="#contactanos">
                     <i class="fas fa-phone-alt"></i>
@@ -125,7 +132,7 @@
                 </a>
                 <a href="https://goo.gl/maps/1fQ9Xf7YhQsysyHx9" target="_blank">
                     <i class="fas fa-map-marked-alt"></i>
-                    <p>Dirección</p>
+                    <p data-translate="direccion">Dirección</p>
                 </a>
                 <a href="#contactanos">
                     <i class="fas fa-envelope"></i>
@@ -139,23 +146,23 @@
             <ul>
                 <li>
                     <a href="#" class="red">
-                        <h3>Enlaces</h3>
+                        <h3 data-translate="enlaces">Enlaces</h3>
                     </a>
                 </li>
                 <li>
-                    <a href="#compania" class="red">Compañía</a>
+                    <a href="#compania" class="red" data-translate="compania">Compañía</a>
                 </li>
                 <li>
-                    <a href="#historia" class="red">Historia</a>
+                    <a href="#historia" class="red" data-translate="historia">Historia</a>
                 </li>
                 <li>
-                    <a href="#actualidad" class="red">Actualidad</a>
+                    <a href="#actualidad" class="red" data-translate="actualidad">Actualidad</a>
                 </li>
             </ul>
             <ul>
                 <li>
                     <a href="#" class="red">
-                        <h3>Contacto</h3>
+                        <h3 data-translate="contacto">Contacto</h3>
                     </a>
                 </li>
 
