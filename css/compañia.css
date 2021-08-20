@@ -1,0 +1,7 @@
+.body-contact{
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 50%;
+}
