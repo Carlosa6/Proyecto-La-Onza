@@ -1,12 +1,242 @@
 [
-    {
-        "id":"foto2",
-        "img":"https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-2.png",
-        "desc":"Afloramiento, donde se observa óxidos de color rojizo con cuarzo, cerca de la plataforma L4 (265466 - 9082227)."
-    },
-    {
-        "id":"foto3",
-        "img":"https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-3.png",
-        "desc":"Vista panorámica, tomada de la parte alta del sector de la plataforma L4 , hacia el camino que va hacia la Alborada."
-    }
+  {
+    "id": "foto2",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-2.png",
+    "desc": "Afloramiento, donde se observa óxidos de color rojizo con cuarzo, cerca de la plataforma L4 (265466 - 9082227)."
+  },
+  {
+    "id": "foto3",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-3.png",
+    "desc": "Vista panorámica, tomada de la parte alta del sector de la plataforma L4 , hacia el camino que va hacia la Alborada."
+  },
+  {
+    "id": "foto4",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-4.png",
+    "desc": "En el límite de la concesión sector L4 se observa alineamientos estructurales."
+  },
+  {
+    "id": "foto6",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-6.png",
+    "desc": "Se observa una estructura con presencia de óxidos, cuarzo cerca de la plataforma L4 con Azimut N340° y Buzamiento 35°-40°NE (265486 – 9082198)."
+  },
+  {
+    "id": "foto11",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-11.png",
+    "desc": "Se observa al personal haciendo camino para llegar a la plataforma L4."
+  },
+  {
+    "id": "foto13",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-13.png",
+    "desc": "Personal llegando a la parte más alta del camino que llegará a la plataforma L4."
+  },
+  {
+    "id": "foto14",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-14.png",
+    "desc": "Otra toma de personal trabajando, haciendo camino para llegar a la plataforma L4."
+  },
+  {
+    "id": "foto43",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-43.png",
+    "desc": "Regresando de verificar los trabajos que están haciendo en la plataforma L4."
+  },
+  {
+    "id": "foto47",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-47.png",
+    "desc": "Estructura de 0.15 mts. de grosor, dela cual se sacó una muestra por canaleta, se encuentra en el corte del camino cerca de la plataforma L4."
+  },
+  {
+    "id": "foto48",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-48.png",
+    "desc": "El equipo principal para la perforación diamantina en trayecto a la plataforma L4."
+  },
+  {
+    "id": "foto49",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-49.png",
+    "desc": "Personal y  acémilas llevando combustible y otros insumos hacia la plataforma L4."
+  },
+  {
+    "id": "foto50",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-50.png",
+    "desc": "Después de hacer llegar el motor y demás equipos quedo listo para iniciar la perforación diamantina en la plataforma L4."
+  },
+  {
+    "id": "foto53",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-53.png",
+    "desc": "Inicio de los trabajos de perforación diamantina en la plataforma L4."
+  },
+  {
+    "id": "foto54",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-54.png",
+    "desc": "Otra toma del inicio de los trabajos de perforación diamantina en la plataforma L4."
+  },
+  {
+    "id": "foto56",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-56.png",
+    "desc": "Levantamiento topográfico con brújula y wincha en el corte del camino, cerca de la plataforma L4, se observa fracturamiento en rocas metamórficas e intrusivas."
+  },
+  {
+    "id": "foto57",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-57.png",
+    "desc": "Continúa la perforación diamantina sin ninguna dificultad plataforma L4."
+  },
+  {
+    "id": "foto60",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-60.png",
+    "desc": "En corte del camino cerca de la plataforma L4 se sacaron 9 muestras, por el método de canaleta."
+  },
+  {
+    "id": "foto64",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-64.png",
+    "desc": "Levantamiento topográfico con brújula y wincha en el corte del camino, cerca de la plataforma L4, se observa fracturamiento en rocas metamórficas e intrusivas."
+  },
+  {
+    "id": "foto65",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-65.png",
+    "desc": "Levantamiento topográfico con brújula y wincha en el corte del camino, cerca de la plataforma L4."
+  },
+  {
+    "id": "foto66",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-66.png",
+    "desc": "Levantamiento topográfico con brújula y wincha en el corte del camino, cerca de la plataforma L4."
+  },
+  {
+    "id": "foto67",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-67.png",
+    "desc": "Afloramiento de metamórfico silicificada se puede observar una falla, Azimut N145°, parte baja de la plataforma L4 (265538 – 9081974)."
+  },
+  {
+    "id": "foto68",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-68.png",
+    "desc": "Afloramiento de metamórfico silicificada  con cuarzo Azimut N50°, con Buzamiento 60NW parte baja de la plataforma L4 (265538 – 9081974)."
+  },
+  {
+    "id": "foto69",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-69.png",
+    "desc": "Pozo de lodos de la plataforma L4."
+  },
+  {
+    "id": "foto86",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-86.png",
+    "desc": "El tercer pozo de lodos de perforación diamantina L4, que tapado y se sembró ichu como se en la foto."
+  },
+  {
+    "id": "foto87",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-87.png",
+    "desc": "Se cercó con cemento y se puso un tubo a la perforación diamantina de L4."
+  },
+  {
+    "id": "foto88",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-88.png",
+    "desc": "Otra toma para ver como quedo después de la perforación diamantina L4."
+  },
+  {
+    "id": "foto131",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-131.png",
+    "desc": "Sector plataforma de perforación L4, falto solucionar una parte del talud como se ve en la toma."
+  },
+  {
+    "id": "foto162",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-162.png",
+    "desc": "En la foto se observa que el talud está en malas condiciones se le recomendó al encargado para que corrija, sector L4."
+  },
+  {
+    "id": "foto163",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-163.png",
+    "desc": "En la foto se observa que el talud está en malas condiciones se le recomendó al encargado para que corrija, sector L4."
+  },
+  {
+    "id": "foto17",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-17.png",
+    "desc": "Vista panorámica l sector L6, personal haciendo camino para llegar a la plataforma."
+  },
+  {
+    "id": "foto20",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-20.png",
+    "desc": "En la toma se observa alineamientos estructurales que tiene un Azimut de N210°, sector L6."
+  },
+  {
+    "id": "foto21",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-21.png",
+    "desc": "Alineamiento estructural con Azimut N210° cerca de la plataforma L6 (265594 – 9083091)."
+  },
+  {
+    "id": "foto23",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-23.png",
+    "desc": "En la toma se observa personal trabajando el camino que nos llevara a la plataforma L6."
+  },
+  {
+    "id": "foto24",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-24.png",
+    "desc": "Alineamientos estructurales sector L6."
+  },
+  {
+    "id": "foto27",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-27.png",
+    "desc": "Camino hacia la plataforma L6."
+  },
+  {
+    "id": "foto141",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-141.png",
+    "desc": "Nueva ubicación de la plataforma L6 (265651-9083109)."
+  },
+  {
+    "id": "foto63",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-63.png",
+    "desc": "Se observa una veta con presencia de cuarzo, pirita y óxidos con Azimut N105° y un Buzamiento 70°SW, cerca de la plataforma L7 (266230 – 9083855)."
+  },
+  {
+    "id": "foto72",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-72.png",
+    "desc": "Plataforma L7."
+  },
+  {
+    "id": "foto73",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-73.png",
+    "desc": "Plataforma L7."
+  },
+  {
+    "id": "foto76",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-76.png",
+    "desc": "Inicio de perforación diamantina en la plataforma L7."
+  },
+  {
+    "id": "foto77",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-77.png",
+    "desc": "Otra toma del inicio de perforación diamantina en la plataforma L7."
+  },
+  {
+    "id": "foto78",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-78.png",
+    "desc": "Se observa testigos de la caja N° 1. Plataforma L7."
+  },
+  {
+    "id": "foto79",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-79.png",
+    "desc": "Se observa una veta con presencia de cuarzo, pirita y óxidos con Azimut N75° y un Buzamiento 60°SE, un poco alejado de la plataforma L7 (266252 – 9083928)."
+  },
+  {
+    "id": "foto80",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-80.png",
+    "desc": "Se observa el pozo de lodo que viene de la perforación plataforma L7."
+  },
+  {
+    "id": "foto81",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-81.png",
+    "desc": "Lo que se observa es la caja N° 43, la veta tiene cuarzo y abundante pirita, se cortó en la progresiva 113.20 mts plataforma L7."
+  },
+  {
+    "id": "foto89",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-89.png",
+    "desc": "Vista panorámica parte alta del campamento camino hacia la plataforma L7."
+  },
+  {
+    "id": "foto118",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-118.png",
+    "desc": "Toma donde se observa el cierre de pozos de lodo en la plataforma L7."
+  },
+  {
+    "id": "foto119",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-119.png",
+    "desc": "Personal de la Empresa Minera la Onza está haciendo una campaña de limpieza en la plataforma L7 y alrededores."
+  }
 ]

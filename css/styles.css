@@ -24,6 +24,9 @@ body {
 h1 {
   padding-left: 50px;
   text-transform: uppercase;
+}
+
+h1 a{
   color: var(--cuarto);
 }
 
@@ -47,6 +50,13 @@ ul {
 
 hr {
   margin: 20px 0px;
+}
+
+h1.tit-parte{
+  text-align: center;
+  margin-top: 40px;
+  font-size: 60px;
+  color:#fff;
 }
 
 .container {
@@ -77,6 +87,7 @@ hr {
   right: 5%;
   top: 0;
   background-color: var(--primero);
+  z-index:3;
 }
 
 .nav-brand {
@@ -116,6 +127,57 @@ hr {
   z-index: 2;
   display: none;
 }
+
+
+/*
+
+ESTILOS DE LAS IMÁGENES DEL INDEX.HTML
+
+*/
+
+
+.imagenes-inicio{
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 12px 13px; 
+  grid-template-areas: 
+    "parte1 parte1 parte2 parte2"
+    "parte3 parte3 parte4 parte4"
+    ". parte5 parte5 ."; 
+}
+
+.parte1 { grid-area: parte1; }
+.parte2 { grid-area: parte2; }
+.parte3 { grid-area: parte3; }
+.parte4 { grid-area: parte4; }
+.parte5 { grid-area: parte5; }
+
+.img-inicio{
+  position:relative;
+}
+
+.img-inicio:hover a{
+  display:block;
+}
+
+.img-inicio a{
+  display:none;
+  position:absolute;
+  font-size:24px;
+  bottom:5px;
+  left:0px;
+  font-weight:700;
+  background:#2c2e43;
+  opacity:0.8;
+  width: 98%;
+  color:#ffd523;
+  padding-left:3px;
+}
+
+
+/*********************/
+
 
 /*SHOWCASE*/
 
@@ -160,12 +222,14 @@ hr {
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;
+  gap: 14px;
   grid-auto-flow: row;
+  margin:25px 0;
 }
 
 .foto-onza{
     position: relative;
+    top:30px;
 }
 
 .descripcion{
@@ -174,8 +238,9 @@ hr {
 }
 
 .foto-onza:hover {
-  border: 5px solid var(--cuarto);
+  border: 3px solid var(--cuarto);
   border-radius: 7px;
+  transform: none;
 }
 
 .foto-onza:hover .descripcion{
