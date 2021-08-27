@@ -157,6 +157,10 @@ ESTILOS DE LAS IMÁGENES DEL INDEX.HTML
   position:relative;
 }
 
+.img-inicio img{
+  width: 100%;
+}
+
 .img-inicio:hover a{
   display:block;
 }

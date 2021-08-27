@@ -60,6 +60,11 @@
     "desc": "Primer viaje del helicóptero, trasladando equipos de perforación de plataforma L7 hacia plataforma L2."
   },
   {
+    "id": "foto100-2",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-100-2.png",
+    "desc": "Segundo viaje del helicóptero, trasladando equipos de perforación de plataforma L7 hacia plataforma L2."
+  },
+  {
     "id": "foto101",
     "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-101.png",
     "desc": "Tercer viaje del helicóptero, trasladando equipos de perforación de plataforma L7 hacia plataforma L2."
@@ -123,6 +128,11 @@
     "id": "foto5",
     "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-5.png",
     "desc": "Continuación de la estructura en la foto 2, se observa vetillas de cuarzo con oxido tiene un Azimut de N340° con Buzamiento 35°-40°NE (265478 – 9082577)."
+  },
+  {
+    "id": "foto5-2",
+    "img": "https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/foto-5-2.png",
+    "desc": "Continuación de la estructura en la foto 2, se observa vetillas de cuarzo con oxido (265478 – 9082577)."
   },
   {
     "id": "foto7",
