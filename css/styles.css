@@ -21,6 +21,11 @@ body {
   font-family: "Oswald", sans-serif;
 }
 
+img{
+  width: 100%;
+  height: auto;
+}
+
 h1 {
   padding-left: 50px;
   text-transform: uppercase;
@@ -56,7 +61,7 @@ h1.tit-parte{
   text-align: center;
   margin-top: 40px;
   font-size: 60px;
-  color:#fff;
+  color:var(--cuarto)
 }
 
 .container {
@@ -140,11 +145,12 @@ ESTILOS DE LAS IMÁGENES DEL INDEX.HTML
   display: grid; 
   grid-template-columns: 1fr 1fr 1fr 1fr; 
   grid-template-rows: 1fr 1fr 1fr; 
-  gap: 12px 13px; 
+  gap: 12px; 
   grid-template-areas: 
     "parte1 parte1 parte2 parte2"
     "parte3 parte3 parte4 parte4"
     ". parte5 parte5 ."; 
+    margin-top: 10px;
 }
 
 .parte1 { grid-area: parte1; }
@@ -169,12 +175,12 @@ ESTILOS DE LAS IMÁGENES DEL INDEX.HTML
   display:none;
   position:absolute;
   font-size:24px;
-  bottom:5px;
+  top:0;
   left:0px;
   font-weight:700;
   background:#2c2e43;
   opacity:0.8;
-  width: 98%;
+  width: 100%;
   color:#ffd523;
   padding-left:3px;
 }
@@ -182,6 +188,23 @@ ESTILOS DE LAS IMÁGENES DEL INDEX.HTML
 
 /*********************/
 
+
+/******* COMPAÑIA *******/
+
+
+section.compania{
+  background: var(--tercero);
+  margin:20px auto;
+  padding: 20px;
+}
+
+img.compania{
+  width: 100%;
+}
+
+
+
+/*********************/
 
 /*SHOWCASE*/
 
@@ -561,3 +584,111 @@ ESTILOS DE LAS IMÁGENES DEL INDEX.HTML
 a.red {
   color: #fff;
 }
+
+
+/********** ACTUALIDAD ******/
+
+h3{
+  text-align: center;
+  font-size: 23px;
+  margin:15px auto;
+}
+
+.pinos-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1em;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.last-pino{
+  grid-column: 2/3;
+}
+
+/*************************/
+
+
+/************* CONTACTANOS *********/
+
+
+.body-contact{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin:20px 0;
+}
+
+.body-left{
+  position: relative;
+}
+
+
+.location-image {
+  line-height: 0;
+  overflow: hidden;
+}
+
+.location-image img {
+  filter: blur(0px);
+  transition: filter 0.3s ease-in;
+  transform: scale(1.1);
+}
+
+.location-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .5s;
+  background: rgba(90,0,10,0.4);
+  color: white;
+  
+  /* position the text in t’ middle*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.body-left:hover .location-title {
+  opacity: 1;
+}
+
+.body-left:hover .location-image img {
+  filter: blur(2px);
+}
+
+.body-right{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.info-right{
+  background: var(--segundo);
+  opacity: 0.8;
+  margin:13px;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.info-right h4{
+  font-size: 26px;
+  color: #fff;
+}
+
+.info-right p{
+  font-size: 19px;
+}
+
+
+/*****************************/
