@@ -20,7 +20,7 @@
     </div>
     <div class="container">
         <nav class="nav-main">
-            <h1>Compañía Minera La Onza S.A.</h1>
+            <h1><a href="index.html">Compañía Minera La Onza S.A.</a></h1>
             <ul class="nav-menu">
                 <li>
                     <a data-translate="inicio" class="menu" href="index.html">Inicio</a>
@@ -44,6 +44,96 @@
 
         <section class="historia" id="historia">
             <h1 class="tit-parte">Proyecto La Onza</h1>
+<!-- ACCESOS -->
+            <div class="slide">
+                <div class="slide-inner">
+                    <input class="slide-open" type="radio" id="slide-1" name="slide" aria-hidden="true" hidden=""
+                        checked="checked">
+                    <div class="slide-item">
+                        <img src="https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/historia-accesos-1.jpeg" alt="Accesos #1">
+                    </div>
+
+                    <input class="slide-open" type="radio" id="slide-2" name="slide" aria-hidden="true" hidden="">
+                    <div class="slide-item">
+                        <img src="https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/historia-accesos-2.jpeg" alt="Accesos #2">
+                    </div>
+
+                    <input class="slide-open" type="radio" id="slide-3" name="slide" aria-hidden="true" hidden="">
+                    <div class="slide-item">
+                        <img src="https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/historia-accesos-3.jpeg" alt="Accesos #3">
+                    </div>
+
+                    <input class="slide-open" type="radio" id="slide-4" name="slide" aria-hidden="true" hidden="">
+                    <div class="slide-item">
+                        <img src="https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/historia-accesos-4.jpeg" alt="Accesos #4">
+                    </div>
+
+                    <input class="slide-open" type="radio" id="slide-5" name="slide" aria-hidden="true" hidden="">
+                    <div class="slide-item">
+                        <img src="https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/historia-accesos-5.jpeg" alt="Accesos #5">
+                    </div>
+
+                    <input class="slide-open" type="radio" id="slide-6" name="slide" aria-hidden="true" hidden="">
+                    <div class="slide-item">
+                        <img src="https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/historia-accesos-6.jpeg" alt="Accesos #6">
+                    </div>
+
+                    <input class="slide-open" type="radio" id="slide-7" name="slide" aria-hidden="true" hidden="">
+                    <div class="slide-item">
+                        <img src="https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/histotia-accesos-7.jpeg" alt="Accesos #7">
+                    </div>
+
+                    
+                    <label for="slide-7" class="slide-control prev control-1">‹</label>
+                    <label for="slide-2" class="slide-control next control-1">›</label>
+
+                    <label for="slide-1" class="slide-control prev control-2">‹</label>
+                    <label for="slide-3" class="slide-control next control-2">›</label>
+
+                    <label for="slide-2" class="slide-control prev control-3">‹</label>
+                    <label for="slide-4" class="slide-control next control-3">›</label>
+
+                    <label for="slide-3" class="slide-control prev control-4">‹</label>
+                    <label for="slide-5" class="slide-control next control-4">›</label>
+
+                    <label for="slide-4" class="slide-control prev control-5">‹</label>
+                    <label for="slide-6" class="slide-control next control-5">›</label>
+
+                    <label for="slide-5" class="slide-control prev control-6">‹</label>
+                    <label for="slide-7" class="slide-control next control-6">›</label>
+
+                    <label for="slide-6" class="slide-control prev control-7">‹</label>
+                    <label for="slide-1" class="slide-control next control-7">›</label>
+
+                    <ol class="slide-indicador">
+                        <li>
+                            <label for="slide-1" class="slide-circulo">*</label>
+                        </li>
+                        <li>
+                            <label for="slide-2" class="slide-circulo">*</label>
+                        </li>
+                        <li>
+                            <label for="slide-3" class="slide-circulo">*</label>
+                        </li>
+                        <li>
+                            <label for="slide-4" class="slide-circulo">*</label>
+                        </li>
+                        <li>
+                            <label for="slide-5" class="slide-circulo">*</label>
+                        </li>
+                        <li>
+                            <label for="slide-6" class="slide-circulo">*</label>
+                        </li>
+                        <li>
+                            <label for="slide-7" class="slide-circulo">*</label>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+<!-- CAMPAMENTO -->
+
+
         </section>
 
         <div class="footer-links">
@@ -96,6 +186,61 @@
     <script src="main.js"></script>
     <script src="language.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+    <script>
+        var current = 0;
+        var imagenes = new Array();
+
+        $(document).ready(function () {
+            var numImages = 8;
+
+            if (numImages <= 3) {
+                $('.right-arrow').css('display', 'none');
+                $('.left-arrow').css('display', 'none');
+            }
+
+            $('.left-arrow').on('click', function () {
+                if (current > 0) {
+                    current = current - 1;
+                } else {
+                    current = numImages - 1;
+                }
+
+                $(".carousel-inner").animate({
+                    "left": -($('#acceso-' + current).position().left)
+                }, 600);
+
+                return false;
+            });
+
+            $('.left-arrow').on('hover', function () {
+                $(this).css('opacity', '0.5');
+            }, function () {
+                $(this).css('opacity', '1');
+            });
+
+            $('.right-arrow').on('hover', function () {
+                $(this).css('opacity', '0.5');
+            }, function () {
+                $(this).css('opacity', '1');
+            });
+
+            $('.right-arrow').on('click', function () {
+                if (numImages > current + 3) {
+                    current = current + 1;
+                } else {
+                    current = 0;
+                }
+
+                $(".carousel-inner").animate({
+                    "left": -($('#acceso-' + current).position().left)
+                }, 600);
+
+                return false;
+            });
+        });
+    </script>
+
 </body>
 
 </html>

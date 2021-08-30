@@ -145,7 +145,7 @@ ESTILOS DE LAS IMÁGENES DEL INDEX.HTML
   display: grid; 
   grid-template-columns: 1fr 1fr 1fr 1fr; 
   grid-template-rows: 1fr 1fr 1fr; 
-  gap: 12px; 
+  gap: 8px; 
   grid-template-areas: 
     "parte1 parte1 parte2 parte2"
     "parte3 parte3 parte4 parte4"
@@ -159,6 +159,56 @@ ESTILOS DE LAS IMÁGENES DEL INDEX.HTML
 .parte4 { grid-area: parte4; }
 .parte5 { grid-area: parte5; }
 
+.location-image {
+  line-height: 0;
+  overflow: hidden;
+}
+
+.img-inicio:hover .location-title {
+  opacity: 1;
+}
+
+
+/* for touch screen devices */
+@media (hover: none) { 
+  .location-title {
+    opacity: 1;
+  }
+  .location-image img {
+    filter: blur(2px);
+  }
+}
+.img-inicio:hover .location-image img {
+  filter: blur(2px);
+}
+
+.location-image img {
+  filter: blur(0px);
+  transition: filter 0.3s ease-in;
+  transform: scale(1.1);
+}
+
+.location-title{
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .5s;
+  background: rgba(90,0,10,0.4);
+  color: white;
+  
+  /* position the text in t’ middle*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .img-inicio{
   position:relative;
 }
@@ -167,23 +217,6 @@ ESTILOS DE LAS IMÁGENES DEL INDEX.HTML
   width: 100%;
 }
 
-.img-inicio:hover a{
-  display:block;
-}
-
-.img-inicio a{
-  display:none;
-  position:absolute;
-  font-size:24px;
-  top:0;
-  left:0px;
-  font-weight:700;
-  background:#2c2e43;
-  opacity:0.8;
-  width: 100%;
-  color:#ffd523;
-  padding-left:3px;
-}
 
 
 /*********************/
@@ -692,3 +725,135 @@ h3{
 
 
 /*****************************/
+
+/********* HISTORIA **********/
+
+.slide {
+  position: relative;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+  width: 640px;
+  margin:25px auto;
+  height: auto;
+}
+
+.slide-inner {
+  position: relative;
+  overflow: hidden;
+  width: 640px;
+  height: auto;
+}
+
+.slide-open:checked + .slide-item {
+  position: static;
+  opacity: 100;
+}
+
+.slide-item {
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity 0.6s ease-out;
+  transition: opacity 0.6s ease-out;
+}
+
+.slide-item img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.slide-control {
+  background: var(--segundo);
+  border-radius: 50%;
+  color: var(--cuarto);
+  cursor: pointer;
+  display: none;
+  font-size: 40px;
+  height: 40px;
+  line-height: 35px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  cursor: pointer;
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  text-align: center;
+  width: 40px;
+  z-index: 10;
+  opacity: 0.7;
+}
+
+.slide-control.prev {
+  left: 2%;
+}
+
+.slide-control.next {
+  right: 2%;
+}
+
+.slide-control:hover {
+  background: var(--cuarto);
+  color: var(--primero);
+}
+
+#slide-1:checked ~ .control-1,
+#slide-2:checked ~ .control-2,
+#slide-3:checked ~ .control-3,
+#slide-4:checked ~ .control-4,
+#slide-5:checked ~ .control-5,
+#slide-6:checked ~ .control-6,
+#slide-7:checked ~ .control-7 {
+  display: block;
+}
+
+.slide-indicador {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
+
+.slide-indicador li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.slide-circulo {
+  color: var(--primero);
+  cursor: pointer;
+  display: block;
+  font-size: 35px;
+}
+
+.slide-circulo:hover {
+  color: var(--cuarto);
+}
+
+#slide-1:checked ~ .control-1 ~ .slide-indicador li:nth-child(1) .slide-circulo,
+#slide-2:checked ~ .control-2 ~ .slide-indicador li:nth-child(2) .slide-circulo,
+#slide-3:checked ~ .control-3 ~ .slide-indicador li:nth-child(3) .slide-circulo,
+#slide-4:checked ~ .control-4 ~ .slide-indicador li:nth-child(4) .slide-circulo,
+#slide-5:checked ~ .control-5 ~ .slide-indicador li:nth-child(5) .slide-circulo,
+#slide-6:checked ~ .control-6 ~ .slide-indicador li:nth-child(6) .slide-circulo,
+#slide-7:checked ~ .control-7 ~ .slide-indicador li:nth-child(7) .slide-circulo {
+  color: var(--cuarto);
+}
+
+#titulo {
+  width: 100%;
+  position: absolute;
+  padding: 0px;
+  margin: 0px auto;
+  text-align: center;
+  font-size: 27px;
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Open Sans', sans-serif;
+  z-index: 9999;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+}
+
+/****************************/
