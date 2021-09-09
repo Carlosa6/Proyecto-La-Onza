@@ -857,3 +857,30 @@ h3{
 }
 
 /****************************/
+
+/********* HISTORIA - GALERIA DE iMáGENES CON SWIPER **/
+
+.historia23{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin:40px auto;
+}
+
+.swiper {
+  width: 585px;
+  height: 340px;
+}
+
+.swiper-slide img{
+  height: auto;
+  width: 585px;
+}
+
+@supports(object-fit: cover){
+  .swiper-slide img{
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+}

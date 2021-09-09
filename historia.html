@@ -1,185 +1,304 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Proyecto La Onza</title>
     <!-- Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
     <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css" />
 
-</head>
+    <!-- LIBRERÍA SWIPPER PARA GALERÍA DE IMÁGENES  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.4/swiper-bundle.min.css"
+      integrity="sha512-P7r8gUYLB8664EQp5Kdj+rKJgnx2ZcoiLJhDPxC+OH/p/n3xXGD0COF633YRzykb1NCcY1UVnWBaf53KBe+4Ow=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="menu-btn">
-        <i class="fas fa-bars"></i>
+      <i class="fas fa-bars"></i>
     </div>
     <div class="container">
-        <nav class="nav-main">
-            <h1><a href="index.html">Compañía Minera La Onza S.A.</a></h1>
-            <ul class="nav-menu">
-                <li>
-                    <a data-translate="inicio" class="menu" href="index.html">Inicio</a>
-                </li>
-                <li>
-                    <a class="menu" data-translate="compania" href="compania.html">Compañía</a>
-                </li>
-                <li>
-                    <a class="menu" href="#historia" data-translate="historia">Historia</a>
-                </li>
-                <li>
-                    <a class="menu" href="actualidad.html" data-translate="actualidad">Actualidad</a>
-                </li>
-                <li>
-                    <a class="menu" href="contactanos.html" data-translate="contactanos">Contáctanos</a>
-                </li>
-                <button onclick="change_lang()" id="idioma">Eng</button>
-            </ul>
-        </nav>
-        <hr>
+      <nav class="nav-main">
+        <h1><a href="index.html">Compañía Minera La Onza S.A.</a></h1>
+        <ul class="nav-menu">
+          <li>
+            <a data-translate="inicio" class="menu" href="index.html">Inicio</a>
+          </li>
+          <li>
+            <a class="menu" data-translate="compania" href="compania.html"
+              >Compañía</a
+            >
+          </li>
+          <li>
+            <a class="menu" href="#historia" data-translate="historia"
+              >Historia</a
+            >
+          </li>
+          <li>
+            <a class="menu" href="actualidad.html" data-translate="actualidad"
+              >Actualidad</a
+            >
+          </li>
+          <li>
+            <a class="menu" href="contactanos.html" data-translate="contactanos"
+              >Contáctanos</a
+            >
+          </li>
+          <button onclick="change_lang()" id="idioma">Eng</button>
+        </ul>
+      </nav>
+      <hr />
 
-        <section class="historia" id="historia">
-            <h1 class="tit-parte">Proyecto La Onza</h1>
-<!-- ACCESOS -->
-            <div class="slide">
-                <div class="slide-inner">
-                    <input class="slide-open" type="radio" id="slide-1" name="slide" aria-hidden="true" hidden=""
-                        checked="checked">
-                    <div class="slide-item">
-                        <img src="https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/historia-accesos-1.jpeg" alt="Accesos #1">
-                    </div>
-
-                    <input class="slide-open" type="radio" id="slide-2" name="slide" aria-hidden="true" hidden="">
-                    <div class="slide-item">
-                        <img src="https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/historia-accesos-2.jpeg" alt="Accesos #2">
-                    </div>
-
-                    <input class="slide-open" type="radio" id="slide-3" name="slide" aria-hidden="true" hidden="">
-                    <div class="slide-item">
-                        <img src="https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/historia-accesos-3.jpeg" alt="Accesos #3">
-                    </div>
-
-                    <input class="slide-open" type="radio" id="slide-4" name="slide" aria-hidden="true" hidden="">
-                    <div class="slide-item">
-                        <img src="https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/historia-accesos-4.jpeg" alt="Accesos #4">
-                    </div>
-
-                    <input class="slide-open" type="radio" id="slide-5" name="slide" aria-hidden="true" hidden="">
-                    <div class="slide-item">
-                        <img src="https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/historia-accesos-5.jpeg" alt="Accesos #5">
-                    </div>
-
-                    <input class="slide-open" type="radio" id="slide-6" name="slide" aria-hidden="true" hidden="">
-                    <div class="slide-item">
-                        <img src="https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/historia-accesos-6.jpeg" alt="Accesos #6">
-                    </div>
-
-                    <input class="slide-open" type="radio" id="slide-7" name="slide" aria-hidden="true" hidden="">
-                    <div class="slide-item">
-                        <img src="https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/histotia-accesos-7.jpeg" alt="Accesos #7">
-                    </div>
-
-                    
-                    <label for="slide-7" class="slide-control prev control-1">‹</label>
-                    <label for="slide-2" class="slide-control next control-1">›</label>
-
-                    <label for="slide-1" class="slide-control prev control-2">‹</label>
-                    <label for="slide-3" class="slide-control next control-2">›</label>
-
-                    <label for="slide-2" class="slide-control prev control-3">‹</label>
-                    <label for="slide-4" class="slide-control next control-3">›</label>
-
-                    <label for="slide-3" class="slide-control prev control-4">‹</label>
-                    <label for="slide-5" class="slide-control next control-4">›</label>
-
-                    <label for="slide-4" class="slide-control prev control-5">‹</label>
-                    <label for="slide-6" class="slide-control next control-5">›</label>
-
-                    <label for="slide-5" class="slide-control prev control-6">‹</label>
-                    <label for="slide-7" class="slide-control next control-6">›</label>
-
-                    <label for="slide-6" class="slide-control prev control-7">‹</label>
-                    <label for="slide-1" class="slide-control next control-7">›</label>
-
-                    <ol class="slide-indicador">
-                        <li>
-                            <label for="slide-1" class="slide-circulo">*</label>
-                        </li>
-                        <li>
-                            <label for="slide-2" class="slide-circulo">*</label>
-                        </li>
-                        <li>
-                            <label for="slide-3" class="slide-circulo">*</label>
-                        </li>
-                        <li>
-                            <label for="slide-4" class="slide-circulo">*</label>
-                        </li>
-                        <li>
-                            <label for="slide-5" class="slide-circulo">*</label>
-                        </li>
-                        <li>
-                            <label for="slide-6" class="slide-circulo">*</label>
-                        </li>
-                        <li>
-                            <label for="slide-7" class="slide-circulo">*</label>
-                        </li>
-                    </ol>
-                </div>
+      <section class="historia" id="historia">
+        <h1 class="tit-parte">Proyecto La Onza</h1>
+        <!-- ACCESOS -->
+        <div class="slide">
+          <div class="slide-inner">
+            <input
+              class="slide-open"
+              type="radio"
+              id="slide-1"
+              name="slide"
+              aria-hidden="true"
+              hidden=""
+              checked="checked"
+            />
+            <div class="slide-item">
+              <img
+                src="https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/historia-accesos-1.jpeg"
+                alt="Accesos #1"
+              />
             </div>
 
-<!-- CAMPAMENTO -->
-
-
-        </section>
-
-        <div class="footer-links">
-            <div class="footer-container">
-                <ul>
-                    <li>
-                        <a href="#" class="red">
-                            <h3 data-translate="enlaces">Enlaces</h3>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="compania.html" class="red" data-translate="compania">Compañía</a>
-                    </li>
-                    <li>
-                        <a href="#historia" class="red" data-translate="historia">Historia</a>
-                    </li>
-                    <li>
-                        <a href="actualidad.html" class="red" data-translate="actualidad">Actualidad</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <a href="#" class="red">
-                            <h3 data-translate="contacto">Contacto</h3>
-                        </a>
-                    </li>
-
-                    <li>
-                        <p class="red"><i>Dirección: </i>Av. La Encalada 1257 oficina 802 Santiago de Surco</p>
-                    </li>
-                    <li>
-                        <p class="red"><i>Correo: </i> mineria@mineralaonza.com</p>
-                    </li>
-                    <li>
-                        <p class="red"><i>Teléfono: </i>+51-1-437 9184</p>
-                    </li>
-                </ul>
-
+            <input
+              class="slide-open"
+              type="radio"
+              id="slide-2"
+              name="slide"
+              aria-hidden="true"
+              hidden=""
+            />
+            <div class="slide-item">
+              <img
+                src="https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/historia-accesos-2.jpeg"
+                alt="Accesos #2"
+              />
             </div>
+
+            <input
+              class="slide-open"
+              type="radio"
+              id="slide-3"
+              name="slide"
+              aria-hidden="true"
+              hidden=""
+            />
+            <div class="slide-item">
+              <img
+                src="https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/historia-accesos-3.jpeg"
+                alt="Accesos #3"
+              />
+            </div>
+
+            <input
+              class="slide-open"
+              type="radio"
+              id="slide-4"
+              name="slide"
+              aria-hidden="true"
+              hidden=""
+            />
+            <div class="slide-item">
+              <img
+                src="https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/historia-accesos-4.jpeg"
+                alt="Accesos #4"
+              />
+            </div>
+
+            <input
+              class="slide-open"
+              type="radio"
+              id="slide-5"
+              name="slide"
+              aria-hidden="true"
+              hidden=""
+            />
+            <div class="slide-item">
+              <img
+                src="https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/historia-accesos-5.jpeg"
+                alt="Accesos #5"
+              />
+            </div>
+
+            <input
+              class="slide-open"
+              type="radio"
+              id="slide-6"
+              name="slide"
+              aria-hidden="true"
+              hidden=""
+            />
+            <div class="slide-item">
+              <img
+                src="https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/historia-accesos-6.jpeg"
+                alt="Accesos #6"
+              />
+            </div>
+
+            <input
+              class="slide-open"
+              type="radio"
+              id="slide-7"
+              name="slide"
+              aria-hidden="true"
+              hidden=""
+            />
+            <div class="slide-item">
+              <img
+                src="https://mineralaonza.com/mineralaonza.com/Proyecto-La-Onza/histotia-accesos-7.jpeg"
+                alt="Accesos #7"
+              />
+            </div>
+
+            <label for="slide-7" class="slide-control prev control-1">‹</label>
+            <label for="slide-2" class="slide-control next control-1">›</label>
+
+            <label for="slide-1" class="slide-control prev control-2">‹</label>
+            <label for="slide-3" class="slide-control next control-2">›</label>
+
+            <label for="slide-2" class="slide-control prev control-3">‹</label>
+            <label for="slide-4" class="slide-control next control-3">›</label>
+
+            <label for="slide-3" class="slide-control prev control-4">‹</label>
+            <label for="slide-5" class="slide-control next control-4">›</label>
+
+            <label for="slide-4" class="slide-control prev control-5">‹</label>
+            <label for="slide-6" class="slide-control next control-5">›</label>
+
+            <label for="slide-5" class="slide-control prev control-6">‹</label>
+            <label for="slide-7" class="slide-control next control-6">›</label>
+
+            <label for="slide-6" class="slide-control prev control-7">‹</label>
+            <label for="slide-1" class="slide-control next control-7">›</label>
+
+            <ol class="slide-indicador">
+              <li>
+                <label for="slide-1" class="slide-circulo">*</label>
+              </li>
+              <li>
+                <label for="slide-2" class="slide-circulo">*</label>
+              </li>
+              <li>
+                <label for="slide-3" class="slide-circulo">*</label>
+              </li>
+              <li>
+                <label for="slide-4" class="slide-circulo">*</label>
+              </li>
+              <li>
+                <label for="slide-5" class="slide-circulo">*</label>
+              </li>
+              <li>
+                <label for="slide-6" class="slide-circulo">*</label>
+              </li>
+              <li>
+                <label for="slide-7" class="slide-circulo">*</label>
+              </li>
+            </ol>
+          </div>
         </div>
 
+        <!-- CAMPAMENTO -->
+
+        <div class="historia23">
+          <div class="swiper" id="campamento">
+            <div class="swiper-wrapper" id="slide-campamento">
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="swiper" id="geologia">
+            <div class="swiper-wrapper" id="slide-geologia">
+                
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+
+      </section>
+
+      <div class="footer-links">
+        <div class="footer-container">
+          <ul>
+            <li>
+              <a href="#" class="red">
+                <h3 data-translate="enlaces">Enlaces</h3>
+              </a>
+            </li>
+            <li>
+              <a href="compania.html" class="red" data-translate="compania"
+                >Compañía</a
+              >
+            </li>
+            <li>
+              <a href="#historia" class="red" data-translate="historia"
+                >Historia</a
+              >
+            </li>
+            <li>
+              <a href="actualidad.html" class="red" data-translate="actualidad"
+                >Actualidad</a
+              >
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#" class="red">
+                <h3 data-translate="contacto">Contacto</h3>
+              </a>
+            </li>
+
+            <li>
+              <p class="red">
+                <i>Dirección: </i>Av. La Encalada 1257 oficina 802 Santiago de
+                Surco
+              </p>
+            </li>
+            <li>
+              <p class="red"><i>Correo: </i> mineria@mineralaonza.com</p>
+            </li>
+            <li>
+              <p class="red"><i>Teléfono: </i>+51-1-437 9184</p>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
     <footer class="footer">
-        <h3>Compañía Minera La Onza S.A. &copy; Comyright 2021</h3>
+      <h3>Compañía Minera La Onza S.A. &copy; Comyright 2021</h3>
     </footer>
-
 
     <!--SCROLLREVEAL-->
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -187,60 +306,103 @@
     <script src="language.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
+    <!-- SWIPPER PARA GALERÍA DE IMÁGENES -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.4/swiper-bundle.min.js"
+      integrity="sha512-uv2WbyNDcHccSYCIjqhSUAG+I4FBX9Th95GOiHS87eJRng715x2d9WMHlktQ1DgriQYSYOlK4FUzF2cSQI1IaA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
     <script>
-        var current = 0;
-        var imagenes = new Array();
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+        effect: "slide",
 
-        $(document).ready(function () {
-            var numImages = 8;
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
 
-            if (numImages <= 3) {
-                $('.right-arrow').css('display', 'none');
-                $('.left-arrow').css('display', 'none');
-            }
-
-            $('.left-arrow').on('click', function () {
-                if (current > 0) {
-                    current = current - 1;
-                } else {
-                    current = numImages - 1;
-                }
-
-                $(".carousel-inner").animate({
-                    "left": -($('#acceso-' + current).position().left)
-                }, 600);
-
-                return false;
-            });
-
-            $('.left-arrow').on('hover', function () {
-                $(this).css('opacity', '0.5');
-            }, function () {
-                $(this).css('opacity', '1');
-            });
-
-            $('.right-arrow').on('hover', function () {
-                $(this).css('opacity', '0.5');
-            }, function () {
-                $(this).css('opacity', '1');
-            });
-
-            $('.right-arrow').on('click', function () {
-                if (numImages > current + 3) {
-                    current = current + 1;
-                } else {
-                    current = 0;
-                }
-
-                $(".carousel-inner").animate({
-                    "left": -($('#acceso-' + current).position().left)
-                }, 600);
-
-                return false;
-            });
-        });
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
     </script>
 
-</body>
+    <script>
+      var current = 0;
+      var imagenes = new Array();
 
+      $(document).ready(function () {
+        var numImages = 8;
+
+        if (numImages <= 3) {
+          $(".right-arrow").css("display", "none");
+          $(".left-arrow").css("display", "none");
+        }
+
+        $(".left-arrow").on("click", function () {
+          if (current > 0) {
+            current = current - 1;
+          } else {
+            current = numImages - 1;
+          }
+
+          $(".carousel-inner").animate(
+            {
+              left: -$("#acceso-" + current).position().left,
+            },
+            600
+          );
+
+          return false;
+        });
+
+        $(".left-arrow").on(
+          "hover",
+          function () {
+            $(this).css("opacity", "0.5");
+          },
+          function () {
+            $(this).css("opacity", "1");
+          }
+        );
+
+        $(".right-arrow").on(
+          "hover",
+          function () {
+            $(this).css("opacity", "0.5");
+          },
+          function () {
+            $(this).css("opacity", "1");
+          }
+        );
+
+        $(".right-arrow").on("click", function () {
+          if (numImages > current + 3) {
+            current = current + 1;
+          } else {
+            current = 0;
+          }
+
+          $(".carousel-inner").animate(
+            {
+              left: -$("#acceso-" + current).position().left,
+            },
+            600
+          );
+
+          return false;
+        });
+      });
+    </script>
+
+    <script src="./dist/historia.js"></script>
+
+  </body>
 </html>
