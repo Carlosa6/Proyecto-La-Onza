@@ -726,161 +726,90 @@ h3{
 
 /*****************************/
 
-/********* HISTORIA **********/
 
-.slide {
-  position: relative;
-  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
-  width: 640px;
-  margin:25px auto;
-  height: auto;
+/********* HISTORIA  ***********/
+
+
+.historia-container{
+  margin:30px 0;
+  display: grid;
+  grid-template-columns: repeat(3,1fr); 
+  grid-template-rows: 1fr 1fr; 
+  gap: 10px; 
+  grid-template-areas: 
+    "img-acc img-camp img-geol"
+    "img-gm img-perf img-geol";
 }
 
-.slide-inner {
-  position: relative;
-  overflow: hidden;
-  width: 640px;
-  height: auto;
+#accesos { grid-area: img-acc; }
+#campamento { grid-area: img-camp; }
+#geologia { grid-area: img-geol; }
+#geologia-muestreo { grid-area: img-gm; }
+#perforacion-dhh { grid-area: img-perf; }
+
+.grid-image.alto{
+  height: 260px;
 }
 
-.slide-open:checked + .slide-item {
-  position: static;
-  opacity: 100;
-}
-
-.slide-item {
-  position: absolute;
-  opacity: 0;
-  -webkit-transition: opacity 0.6s ease-out;
-  transition: opacity 0.6s ease-out;
-}
-
-.slide-item img {
-  display: block;
-  height: auto;
-  max-width: 100%;
-}
-
-.slide-control {
-  background: var(--segundo);
-  border-radius: 50%;
-  color: var(--cuarto);
-  cursor: pointer;
-  display: none;
-  font-size: 40px;
-  height: 40px;
-  line-height: 35px;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translate(0, -50%);
-  cursor: pointer;
-  -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-  text-align: center;
-  width: 40px;
-  z-index: 10;
-  opacity: 0.7;
-}
-
-.slide-control.prev {
-  left: 2%;
-}
-
-.slide-control.next {
-  right: 2%;
-}
-
-.slide-control:hover {
-  background: var(--cuarto);
-  color: var(--primero);
-}
-
-#slide-1:checked ~ .control-1,
-#slide-2:checked ~ .control-2,
-#slide-3:checked ~ .control-3,
-#slide-4:checked ~ .control-4,
-#slide-5:checked ~ .control-5,
-#slide-6:checked ~ .control-6,
-#slide-7:checked ~ .control-7 {
-  display: block;
-}
-
-.slide-indicador {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  bottom: 2%;
-  left: 0;
-  right: 0;
-  text-align: center;
-  z-index: 10;
-}
-
-.slide-indicador li {
-  display: inline-block;
-  margin: 0 5px;
-}
-
-.slide-circulo {
-  color: var(--primero);
-  cursor: pointer;
-  display: block;
-  font-size: 35px;
-}
-
-.slide-circulo:hover {
-  color: var(--cuarto);
-}
-
-#slide-1:checked ~ .control-1 ~ .slide-indicador li:nth-child(1) .slide-circulo,
-#slide-2:checked ~ .control-2 ~ .slide-indicador li:nth-child(2) .slide-circulo,
-#slide-3:checked ~ .control-3 ~ .slide-indicador li:nth-child(3) .slide-circulo,
-#slide-4:checked ~ .control-4 ~ .slide-indicador li:nth-child(4) .slide-circulo,
-#slide-5:checked ~ .control-5 ~ .slide-indicador li:nth-child(5) .slide-circulo,
-#slide-6:checked ~ .control-6 ~ .slide-indicador li:nth-child(6) .slide-circulo,
-#slide-7:checked ~ .control-7 ~ .slide-indicador li:nth-child(7) .slide-circulo {
-  color: var(--cuarto);
-}
-
-#titulo {
+.grid-image img {
   width: 100%;
-  position: absolute;
-  padding: 0px;
-  margin: 0px auto;
-  text-align: center;
-  font-size: 27px;
-  color: rgba(255, 255, 255, 1);
-  font-family: 'Open Sans', sans-serif;
-  z-index: 9999;
-  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
-}
-
-/****************************/
-
-/********* HISTORIA - GALERIA DE iMáGENES CON SWIPER **/
-
-.historia23{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin:40px auto;
-}
-
-.swiper {
-  width: 585px;
-  height: 340px;
-}
-
-.swiper-slide img{
   height: auto;
-  width: 585px;
+  filter: blur(0px);
+  transition: filter 0.3s ease-in;
+  transform: scale(1.1);
 }
 
 @supports(object-fit: cover){
-  .swiper-slide img{
+  .grid-image img{
     height: 100%;
     object-fit: cover;
     object-position: center center;
   }
 }
+
+.listgrid{
+  position: relative;
+}
+
+.grid-image{
+  line-height: 0;
+  overflow: hidden;
+}
+
+.list-title{
+  font-size: 2em;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .5s;
+  background: rgba(240, 133, 133, 0.4);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.listgrid:hover .list-title {
+  opacity: 1;
+}
+
+.listgrid:hover .grid-image img {
+  filter: blur(2px);
+}
+
+
+@media (hover: none) { 
+  .list-title {
+    opacity: 1;
+  }
+  .grid-image img {
+    filter: blur(2px);
+  }
+}
+

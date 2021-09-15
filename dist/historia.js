@@ -43,12 +43,7 @@
     };
   }
 
-  function cargarFunciones(){
-      cargarImgCampamento();
-      cargarImgGeologia();
-  }
-  
-  window.onload = cargarFunciones;
+
 
 
 
