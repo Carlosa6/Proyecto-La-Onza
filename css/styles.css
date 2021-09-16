@@ -145,7 +145,7 @@ ESTILOS DE LAS IMÁGENES DEL INDEX.HTML
   display: grid; 
   grid-template-columns: 1fr 1fr 1fr 1fr; 
   grid-template-rows: 1fr 1fr 1fr; 
-  gap: 8px; 
+  gap: 12px; 
   grid-template-areas: 
     "parte1 parte1 parte2 parte2"
     "parte3 parte3 parte4 parte4"
@@ -158,6 +158,7 @@ ESTILOS DE LAS IMÁGENES DEL INDEX.HTML
 .parte3 { grid-area: parte3; }
 .parte4 { grid-area: parte4; }
 .parte5 { grid-area: parte5; }
+
 
 .location-image {
   line-height: 0;
@@ -182,7 +183,13 @@ ESTILOS DE LAS IMÁGENES DEL INDEX.HTML
   filter: blur(2px);
 }
 
+.location-image{
+  height: 300px;
+}
+
 .location-image img {
+  width: 100%;
+  height: auto;
   filter: blur(0px);
   transition: filter 0.3s ease-in;
   transform: scale(1.1);
@@ -200,10 +207,9 @@ ESTILOS DE LAS IMÁGENES DEL INDEX.HTML
   left: 0;
   opacity: 0;
   transition: opacity .5s;
-  background: rgba(90,0,10,0.4);
+  background: rgba(90, 81, 0, 0.4);
   color: white;
   
-  /* position the text in t’ middle*/
   display: flex;
   align-items: center;
   justify-content: center;
@@ -211,10 +217,6 @@ ESTILOS DE LAS IMÁGENES DEL INDEX.HTML
 
 .img-inicio{
   position:relative;
-}
-
-.img-inicio img{
-  width: 100%;
 }
 
 
@@ -811,5 +813,11 @@ h3{
   .grid-image img {
     filter: blur(2px);
   }
+}
+
+
+h2.hist-acc{
+  text-align: center;
+  color:white;
 }
 
