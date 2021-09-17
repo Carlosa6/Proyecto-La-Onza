@@ -97,6 +97,31 @@
     <script src="dist/main-parte1.js"></script>
     <!-- <script src="language.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script>
+        function cargarImagenes() {
+          const xhttp = new XMLHttpRequest();
+          xhttp.open("GET", "./json/historia-pdhh.json", true);
+          xhttp.send();
+          xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+              let datos = JSON.parse(this.responseText);
+              // console.log(datos);
+              const compania = document.getElementById("perforaciondhh");
+              compania.innerHTML = "";
+  
+              datos.map(function (imagen) {
+                compania.innerHTML += `
+              <div id="${imagen.id}" class="slide">
+                <img src="${imagen.img}" alt="${imagen.id}" />
+              </div>
+            `;
+              });
+            }
+          };
+        }
+  
+        cargarImagenes();
+      </script>
 </body>
 
 </html>
