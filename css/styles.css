@@ -6,7 +6,6 @@
 }
 
 * {
-  /*es para todos los elementos*/
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -26,15 +25,15 @@ img{
 }
 
 h1 {
-  padding-left: 50px;
+  padding-left: 30px;
   text-transform: uppercase;
   color: var(--primero);
-  text-shadow: 8px 4px 7px rgba(255,213,35,0.82);
 }
 
 h1 a{
   color: var(--cuarto);
   text-shadow: none;
+  font-size:38px;
 }
 
 h2 {
@@ -61,8 +60,9 @@ hr {
 
 h1.tit-parte{
   text-align: center;
-  margin-top: 40px;
-  font-size: 60px;
+  margin-top: 30px;
+  font-size: 40px;
+  margin-bottom: 18px;
 }
 
 .container {
@@ -86,7 +86,7 @@ h1.tit-parte{
   justify-content: space-between;
   align-items: center;
   height: 60px;
-  padding: 20px 0px;
+  padding: 40px 0px;
 
   position: fixed;
   left: 5%;
@@ -141,84 +141,18 @@ ESTILOS DE LAS IMÁGENES DEL INDEX.HTML
 
 */
 
-
 .imagenes-inicio{
-  display: grid; 
-  grid-template-columns: 1fr 1fr 1fr 1fr; 
-  grid-template-rows: 1fr 1fr 1fr; 
-  gap: 12px; 
-  grid-template-areas: 
-    "parte1 parte1 parte2 parte2"
-    "parte3 parte3 parte4 parte4"
-    ". parte5 parte5 ."; 
-    margin-top: 10px;
-}
-
-.parte1 { grid-area: parte1; }
-.parte2 { grid-area: parte2; }
-.parte3 { grid-area: parte3; }
-.parte4 { grid-area: parte4; }
-.parte5 { grid-area: parte5; }
-
-
-.location-image {
-  line-height: 0;
-  overflow: hidden;
-}
-
-.img-inicio:hover .location-title {
-  opacity: 1;
-}
-
-
-/* for touch screen devices */
-@media (hover: none) { 
-  .location-title {
-    opacity: 1;
-  }
-  .location-image img {
-    filter: blur(2px);
-  }
-}
-.img-inicio:hover .location-image img {
-  filter: blur(2px);
-}
-
-.location-image{
-  height: 300px;
-}
-
-.location-image img {
-  width: 100%;
-  height: auto;
-  filter: blur(0px);
-  transition: filter 0.3s ease-in;
-  transform: scale(1.1);
-}
-
-.location-title{
-  font-size: 1.5em;
-  font-weight: bold;
-  text-decoration: none;
-  z-index: 1;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity .5s;
-  background: rgba(90, 81, 0, 0.4);
-  color: white;
-  
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-.img-inicio{
-  position:relative;
+.img-inicio img{
+  width: 390px;
+  height: 320px;
+  object-fit: cover;
 }
+
 
 
 
