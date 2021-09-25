@@ -60,7 +60,7 @@ hr {
 
 h1.tit-parte{
   text-align: center;
-  margin-top: 30px;
+  margin-top: 40px;
   font-size: 40px;
   margin-bottom: 18px;
 }
@@ -163,9 +163,8 @@ ESTILOS DE LAS IMÁGENES DEL INDEX.HTML
 
 
 section.compania{
-  background: var(--tercero);
   margin:20px auto;
-  padding: 20px;
+  padding: 10px;
 }
 
 img.compania{
@@ -392,40 +391,8 @@ img.compania{
   font-size: 1.5rem;
 }
 
-/*----------------------------*/
 
-.footer-links {
-  background: #2f3640;
-  color: #fff;
-  font-size: 14px;
-  padding: 35px 0;
-}
 
-.footer-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  align-items: flex-start;
-  justify-content: center;
-  color: #fff;
-}
-
-.footer-container ul {
-  margin: 0 auto;
-}
-
-.footer-container ul li {
-  line-height: 2.8;
-}
-
-.footer {
-  background: #2f3640;
-  color: #fff;
-  font-size: 12px;
-  padding: 20px 0;
-  text-align: center;
-  padding-bottom: 20px;
-}
 
 @media (max-width: 880px) {
   h1 {
@@ -529,9 +496,7 @@ img.compania{
     width: 100%;
   }
 
-  .footer-links .footer-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  
 }
 
 @media (max-width: 500px) {
@@ -542,13 +507,6 @@ img.compania{
     padding: 10px;
   }
 
-  .footer-container ul {
-    margin: 10px;
-  }
-
-  .footer-links .footer-container {
-    grid-template-columns: 1fr;
-  }
 }
 
 a.red {
@@ -556,12 +514,68 @@ a.red {
 }
 
 
+/************ COMPANIA *****************/
+
+.personas{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 30px;
+}
+
+
+
+h4.subtit{
+  font-size: 25px;
+  background: var(--cuarto);
+  color: var(--segundo);
+  padding-left: 5px;
+  padding-right: 7px;
+}
+
+.gerente p,
+.directores ul li,
+.socios ul li{
+  margin:8px 0px 0px 5px;
+  font-size: 19px;
+}
+
+.resumen .parte1{
+  background: var(--tercero);
+  padding:26px;
+  margin-bottom: 30px;
+}
+
+.resumen .parte1 p{
+  text-align: center;
+}
+
+.resumen .parte2{
+  background: var(--primero);
+  color: #fff;
+  padding: 26px;
+}
+
+.resumen .parte2 ul.list-romanos{
+  list-style-type:upper-roman;
+}
+
+.resumen .parte2 p{
+  margin-bottom: 12px;
+}
+
+.resumen .parte2 ul.list-romanos li{
+  margin:5px 10px;
+}
+
+
 /********** ACTUALIDAD ******/
 
-h3{
+p.subtit-actualidad{
   text-align: center;
-  font-size: 23px;
-  margin:15px auto;
+  font-size: 20px;
+  font-style: italic;
 }
 
 .pinos-container{
@@ -582,15 +596,15 @@ h3{
 /************* CONTACTANOS *********/
 
 
-.body-contact{
+/* .body-contact{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  margin:20px 0;
-}
+  margin:40px 0;
+} */
 
-.body-left{
+/* .body-left{
   position: relative;
 }
 
@@ -623,24 +637,24 @@ h3{
   color: white;
   
   /* position the text in t’ middle*/
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
-}
+  justify-content: center; */
 
-.body-left:hover .location-title {
+
+/* .body-left:hover .location-title {
   opacity: 1;
 }
 
 .body-left:hover .location-image img {
   filter: blur(2px);
-}
+} */
 
 .body-right{
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
 }
 
 .info-right{
@@ -650,11 +664,12 @@ h3{
   padding: 15px;
   border-radius: 10px;
   text-align: left;
+  width: 400px;
 }
 
 .info-right h4{
   font-size: 26px;
-  color: #fff;
+  color: var(--primero);
 }
 
 .info-right p{
