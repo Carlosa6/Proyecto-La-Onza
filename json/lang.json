@@ -23,12 +23,18 @@
         "part8":"Perforación de 3 sondajes diamantinos, con 1120 m perforados en total, reconociendo vetas mineralizadas con valores de hasta 6,7 g/t Au @ 0,55 m (muestra 8651 del sondaje DDH-LO18-01)",
         "part9":"Espectrometría con TerraSpec de 42 muestras de roca alterada, obteniendo como resultado la marcada presencia de alteración clorítica y en menor grado carbonatización, silicificación y sericitización",
         "part10":"Petromineragrafía de muestras de sondajes, dentro la cual se consideró el estudio mineragráfico de 4 muestras con las que se definió la paragénesis, soportada por los coeficientes de correlación de Pearson, y el estudio petrográfico de 4 muestras con las que se clasificó a las rocas metamórficas como neis y se identificó la alteración sericítica de las rocas de caja.",
-        "titulo3":"The Ounce Project",
+        "titulo3":"Proyecto la Onza",
         "acceso":"Accesos",
         "campamentos":"Campamento",
         "geolo":"Geología",
         "muestreo":"Geología Muestreo",
-        "dhh":"Perforación DHH"
+        "dhh":"Perforación DHH",
+        "contac":"Contáctanos",
+        "direccion":"Dirección",
+        "correo":"Correo",
+        "telefono":"Telefono",
+        "actuali":"Actualidad",
+        "titulo4":"Entrega de pinos a la Comunidad Campesina La Victoria, Distrito de Tayabamba, Provincia de Pataz, La Libertad. Año 2020."
     },
     "en":{
         "inicio": "Home",
@@ -59,7 +65,13 @@
         "campamentos":"Camp",
         "geolo":"Geology",
         "muestreo":"Geology Sampling",
-        "dhh":"DHH drilling"
+        "dhh":"DHH drilling",
+        "contac":"Contact us",
+        "direccion":"Address",
+        "correo":"Mail",
+        "telefono":"Telephone",
+        "actuali":"Present",
+        "titulo4":"Delivery of pines to the La Victoria Peasant Community, Tayabamba District, Pataz Province, La Libertad. Year 2020."
 
     }
   }
