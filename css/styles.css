@@ -87,7 +87,6 @@ h1.tit-parte{
   align-items: center;
   height: 60px;
   padding: 40px 0px;
-
   position: fixed;
   left: 5%;
   right: 5%;
@@ -116,7 +115,7 @@ h1.tit-parte{
 
 .nav-main ul li a:hover {
   /*agregar efecto cuando se coloca el cursor sobre el menu*/
-  border-bottom: 2px solid rgb(110, 59, 11);
+  border-bottom: 2px solid rgb(27, 15, 68);
   /*agrega efecto de */
 }
 
