@@ -21,7 +21,7 @@ body {
 
 img{
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 h1 {
@@ -33,7 +33,7 @@ h1 {
 h1 a{
   color: var(--cuarto);
   text-shadow: none;
-  font-size:38px;
+  font-size:32px;
 }
 
 h2 {
@@ -60,13 +60,20 @@ hr {
 
 h1.tit-parte{
   text-align: center;
-  margin-top: 40px;
+  margin-top: 106px;
   font-size: 40px;
   margin-bottom: 18px;
 }
 
+h1.tit-parte1{
+  text-align: center;
+  margin-top: 79px;
+  font-size: 38px;
+  margin-bottom: 18px;
+}
+
 .container {
-  width: 90%;
+  width: 94%;
   margin: auto;
 }
 
@@ -77,69 +84,100 @@ h1.tit-parte{
   cursor: pointer;
   font-weight: 600;
 }
-
 /*navegacion*/
 
-.nav-main {
-  font-size: 17px;
+.nav-main{
+  font-size: 18px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 60px;
   padding: 40px 0px;
   position: fixed;
-  left: 5%;
-  right: 5%;
+  left: 2%;
+  right: 2%;
   top: 0;
   background-color: var(--primero);
-  z-index:3;
 }
 
-.nav-brand {
-  width: 50px;
-}
-
-/*NAV left*/
-
-.nav-main ul {
+.nav-main ul{
   display: flex;
 }
-
-.nav-main ul li {
+.nav-main ul li{
   padding: 10px;
 }
-
 .nav-main ul li a {
   padding: 2px;
 }
-
-.nav-main ul li a:hover {
-  /*agregar efecto cuando se coloca el cursor sobre el menu*/
-  border-bottom: 2px solid rgb(27, 15, 68);
-  /*agrega efecto de */
-}
-
 .nav-main ul.nav-menu .nav-menu {
   flex: 1;
   margin-left: 20px;
 }
-
-.menu-btn {
-  position: fixed;
-  cursor: pointer;
-  top: 15px;
-  right: 60px;
-  z-index: 2;
-  display: none;
+.nav-main ul li a:hover {
+  border-bottom: 2px solid rgb(27, 15, 68);
 }
 
+.checkbtn{
+  font-size: 30px;
+  position: fixed;
+  cursor: pointer;
+  float: right;
+  height: 38px;
+  left: 87%;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  .nav-main {
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    height: auto;
+    padding: 20px 0px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+    color: var(--cuarto);
+  }
+  
+  .nav-main ul.nav-menu{
+    display: block;
+    position: fixed;
+    top: -1px;
+    left: -100%;
+   height: 100%;
+    padding: 30px;
+    opacity: 0.9;
+    background-color: var(--primero);
+    text-align: center;
+    transition: all .5s;
 
-/*
+  }
+  .nav-main ul.nav-menu li{
+    display: block;
+    margin: 10px 0;
+    line-height: 30px;
+  }
+  .nav-main ul.nav-menu li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    background-color: var(--primero);
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
 
-ESTILOS DE LAS IMÁGENES DEL INDEX.HTML
+/****/
 
-*/
-
+/*ESTILOS DE LAS IMÁGENES DEL INDEX.HTML*/
 .imagenes-inicio{
   display: flex;
   justify-content: space-around;
@@ -151,16 +189,10 @@ ESTILOS DE LAS IMÁGENES DEL INDEX.HTML
   height: 320px;
   object-fit: cover;
 }
-
-
-
-
 /*********************/
 
 
 /******* COMPAÑIA *******/
-
-
 section.compania{
   margin:20px auto;
   padding: 10px;
@@ -169,13 +201,9 @@ section.compania{
 img.compania{
   width: 100%;
 }
-
-
-
 /*********************/
 
 /*SHOWCASE*/
-
 .logo {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -187,7 +215,7 @@ img.compania{
 
 .img-logo img {
   width: 100%;
-  height: 100%;
+  height: 116%;
 }
 
 .btn {
@@ -409,42 +437,6 @@ img.compania{
     text-decoration: none;
   }
 
-  .nav-main {
-    font-size: 10px;
-    display: flex;
-    align-items: center;
-    height: auto;
-    padding: 20px 0px;
-  }
-
-  .menu-btn {
-    display: block;
-    color: var(--cuarto);
-  }
-
-  .nav-main ul.nav-menu {
-    display: block;
-    position: absolute;
-    top: 0px;
-    left: 0;
-    /* background: var(--segundo); */
-    height: 100%;
-    padding: 30px;
-    opacity: 0.9;
-    transform: translateX(-400px);
-    transition: transform 0.5s ease-in-out;
-  }
-
-  .nav-main ul.nav-menu.show {
-    transform: translateX(-20px);
-    /* background: var(--segundo); */
-  }
-
-  .nav-main ul.nav-menu li {
-    padding: 30px;
-    font-size: 14px;
-    background: var(--segundo);
-  }
 
   .news-cards {
     display: grid;
@@ -593,62 +585,6 @@ p.subtit-actualidad{
 
 
 /************* CONTACTANOS *********/
-
-
-/* .body-contact{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  margin:40px 0;
-} */
-
-/* .body-left{
-  position: relative;
-}
-
-
-.location-image {
-  line-height: 0;
-  overflow: hidden;
-  border:3px solid var(--segundo);
-}
-
-.location-image img {
-  filter: blur(0px);
-  transition: filter 0.3s ease-in;
-  transform: scale(1.1);
-}
-
-.location-title {
-  font-size: 1.5em;
-  font-weight: bold;
-  text-decoration: none;
-  z-index: 1;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity .5s;
-  background: rgba(90,0,10,0.4);
-  color: white;
-  
-  /* position the text in t’ middle*/
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-
-
-/* .body-left:hover .location-title {
-  opacity: 1;
-}
-
-.body-left:hover .location-image img {
-  filter: blur(2px);
-} */
-
 .body-right{
   display: flex;
   flex-direction: column;
@@ -658,24 +594,19 @@ p.subtit-actualidad{
 
 .info-right{
   background: var(--tercero);
-  opacity: 0.9;
   margin:13px;
   padding: 15px;
   border-radius: 10px;
   text-align: left;
   width: 400px;
 }
-
 .info-right h4{
   font-size: 26px;
   color: var(--primero);
 }
-
 .info-right p{
   font-size: 19px;
 }
-
-
 /*****************************/
 
 
@@ -720,7 +651,7 @@ p.subtit-actualidad{
 }
 
 .listgrid{
-  position: relative;
+  position: sticky;
 }
 
 .grid-image{
@@ -729,8 +660,7 @@ p.subtit-actualidad{
 }
 
 .list-title{
-  font-size: 2em;
-  font-weight: bold;
+  font-size: 2rem;
   text-decoration: none;
   z-index: 1;
   position: absolute;
@@ -740,7 +670,7 @@ p.subtit-actualidad{
   left: 0;
   opacity: 0;
   transition: opacity .5s;
-  background: rgba(240, 133, 133, 0.4);
+  background: rgb(27 15 68 / 32%);
   color: white;
   display: flex;
   align-items: center;
@@ -787,6 +717,10 @@ h2.hist-acc{
   margin-bottom: 10px;
   object-fit: cover;
 }
+
+
+/**********FIN ****************/
+
 /*************dropdown*******************/
 .dropbtn {
   background-color: var(--primero);
@@ -827,3 +761,4 @@ h2.hist-acc{
 .dropdown:hover .dropbtn {
   background-color: var(--primero);
 }
+
