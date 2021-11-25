@@ -19,7 +19,7 @@ body {
   font-family: "Oswald", sans-serif;
 }
 
-img{
+img {
   width: 100%;
   height: 100%;
 }
@@ -30,10 +30,10 @@ h1 {
   color: var(--primero);
 }
 
-h1 a{
+h1 a {
   color: var(--cuarto);
   text-shadow: none;
-  font-size:32px;
+  font-size: 27px;
 }
 
 h2 {
@@ -58,14 +58,14 @@ hr {
   margin: 20px 0px;
 }
 
-h1.tit-parte{
+h1.tit-parte {
   text-align: center;
   margin-top: 106px;
   font-size: 40px;
   margin-bottom: 18px;
 }
 
-h1.tit-parte1{
+h1.tit-parte1 {
   text-align: center;
   margin-top: 79px;
   font-size: 38px;
@@ -86,7 +86,7 @@ h1.tit-parte1{
 }
 /*navegacion*/
 
-.nav-main{
+.nav-main {
   font-size: 18px;
   display: flex;
   justify-content: space-between;
@@ -98,12 +98,13 @@ h1.tit-parte1{
   right: 2%;
   top: 0;
   background-color: var(--primero);
+  z-index: 9999;
 }
 
-.nav-main ul{
+.nav-main ul {
   display: flex;
 }
-.nav-main ul li{
+.nav-main ul li {
   padding: 10px;
 }
 .nav-main ul li a {
@@ -117,8 +118,8 @@ h1.tit-parte1{
   border-bottom: 2px solid rgb(27, 15, 68);
 }
 
-.checkbtn{
-  font-size: 30px;
+.checkbtn {
+  font-size: 25px;
   position: fixed;
   cursor: pointer;
   float: right;
@@ -127,10 +128,21 @@ h1.tit-parte1{
   cursor: pointer;
   display: none;
 }
-#check{
+#check {
   display: none;
 }
-@media (max-width: 952px){
+
+@media (max-width: 850px) {
+  h1 a {
+    font-size: 24px;
+  }
+
+  .checkbtn {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 952px) {
   .nav-main {
     font-size: 10px;
     display: flex;
@@ -139,38 +151,39 @@ h1.tit-parte1{
     padding: 20px 0px;
   }
 }
-@media (max-width: 858px){
-  .checkbtn{
+@media (max-width: 858px) {
+  .checkbtn {
     display: block;
     color: var(--cuarto);
   }
-  
-  .nav-main ul.nav-menu{
+
+  .nav-main ul.nav-menu {
     display: block;
     position: fixed;
     top: -1px;
     left: -100%;
-   height: 100%;
+    height: 100%;
     padding: 30px;
     opacity: 0.9;
     background-color: var(--primero);
     text-align: center;
-    transition: all .5s;
-
+    transition: all 0.5s;
+    z-index: 9999;
   }
-  .nav-main ul.nav-menu li{
+  .nav-main ul.nav-menu li {
     display: block;
     margin: 10px 0;
     line-height: 30px;
   }
-  .nav-main ul.nav-menu li a{
+  .nav-main ul.nav-menu li a {
     font-size: 20px;
   }
-  a:hover,a.active{
+  a:hover,
+  a.active {
     background: none;
     background-color: var(--primero);
   }
-  #check:checked ~ ul{
+  #check:checked ~ ul {
     left: 0;
   }
 }
@@ -178,27 +191,32 @@ h1.tit-parte1{
 /****/
 
 /*ESTILOS DE LAS IMÁGENES DEL INDEX.HTML*/
-.imagenes-inicio{
+.imagenes-inicio {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
-.img-inicio img{
+.img-inicio img {
   width: 390px;
   height: 320px;
   object-fit: cover;
+  margin-bottom: 20px;
 }
+
+.img-inicio.arreglaralto img {
+  object-fit: inherit;
+}
+
 /*********************/
 
-
 /******* COMPAÑIA *******/
-section.compania{
-  margin:20px auto;
+section.compania {
+  margin: 20px auto;
   padding: 10px;
 }
 
-img.compania{
+img.compania {
   width: 100%;
 }
 /*********************/
@@ -247,17 +265,17 @@ img.compania{
   grid-template-columns: 1fr 1fr 1fr;
   gap: 14px;
   grid-auto-flow: row;
-  margin:25px 0;
+  margin: 25px 0;
 }
 
-.foto-onza{
-    position: relative;
-    top:30px;
+.foto-onza {
+  position: relative;
+  top: 30px;
 }
 
-.descripcion{
-    display: none;
-    position: absolute;
+.descripcion {
+  display: none;
+  position: absolute;
 }
 
 .foto-onza:hover {
@@ -266,8 +284,8 @@ img.compania{
   transform: none;
 }
 
-.foto-onza:hover .descripcion{
-    display: block;
+.foto-onza:hover .descripcion {
+  display: block;
   background: var(--primero);
   opacity: 0.8;
   color: #fff;
@@ -276,8 +294,6 @@ img.compania{
   padding: 6px;
   font-size: 13px;
 }
-
-
 
 .imagen2 {
   grid-area: imagen2;
@@ -418,9 +434,6 @@ img.compania{
   font-size: 1.5rem;
 }
 
-
-
-
 @media (max-width: 880px) {
   h1 {
     font-size: 20px;
@@ -436,7 +449,6 @@ img.compania{
     color: white;
     text-decoration: none;
   }
-
 
   .news-cards {
     display: grid;
@@ -486,8 +498,6 @@ img.compania{
   .cards-banner-two .content {
     width: 100%;
   }
-
-  
 }
 
 @media (max-width: 500px) {
@@ -497,17 +507,15 @@ img.compania{
     height: auto;
     padding: 10px;
   }
-
 }
 
 a.red {
   color: #fff;
 }
 
-
 /************ COMPANIA *****************/
 
-.personas{
+.personas {
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
@@ -515,9 +523,18 @@ a.red {
   margin-top: 30px;
 }
 
+@media (max-width: 600px) {
+  .personas {
+    flex-direction: column;
+  }
 
+  .personas .gerente,
+  .personas .directores {
+    margin-bottom: 30px;
+  }
+}
 
-h4.subtit{
+h4.subtit {
   font-size: 25px;
   background: var(--cuarto);
   color: var(--segundo);
@@ -527,49 +544,48 @@ h4.subtit{
 
 .gerente p,
 .directores ul li,
-.socios ul li{
-  margin:8px 0px 0px 5px;
+.socios ul li {
+  margin: 8px 0px 0px 5px;
   font-size: 19px;
 }
 
-.resumen .parte1{
+.resumen .parte1 {
   background: var(--tercero);
-  padding:26px;
+  padding: 26px;
   margin-bottom: 30px;
 }
 
-.resumen .parte1 p{
+.resumen .parte1 p {
   text-align: center;
 }
 
-.resumen .parte2{
+.resumen .parte2 {
   background: var(--primero);
   color: #fff;
   padding: 26px;
 }
 
-.resumen .parte2 ul.list-romanos{
-  list-style-type:upper-roman;
+.resumen .parte2 ul.list-romanos {
+  list-style-type: upper-roman;
 }
 
-.resumen .parte2 p{
+.resumen .parte2 p {
   margin-bottom: 12px;
 }
 
-.resumen .parte2 ul.list-romanos li{
-  margin:5px 10px;
+.resumen .parte2 ul.list-romanos li {
+  margin: 5px 10px;
 }
-
 
 /********** ACTUALIDAD ******/
 
-p.subtit-actualidad{
+p.subtit-actualidad {
   text-align: center;
   font-size: 20px;
   font-style: italic;
 }
 
-.pinos-container{
+.pinos-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 1em;
@@ -577,60 +593,87 @@ p.subtit-actualidad{
   margin-bottom: 20px;
 }
 
-.last-pino{
+.last-pino {
   grid-column: 2/3;
 }
 
 /*************************/
 
-
 /************* CONTACTANOS *********/
-.body-right{
+.body-right {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.info-right{
+.info-right {
   background: var(--tercero);
-  margin:13px;
+  margin: 13px;
   padding: 15px;
   border-radius: 10px;
   text-align: left;
   width: 400px;
 }
-.info-right h4{
+.info-right h4 {
   font-size: 26px;
   color: var(--primero);
 }
-.info-right p{
+.info-right p {
   font-size: 19px;
 }
 /*****************************/
 
-
 /********* HISTORIA  ***********/
 
-
-.historia-container{
-  margin:30px 0;
+.historia-container {
+  margin: 30px 0;
   display: grid;
-  grid-template-columns: repeat(3,1fr); 
-  grid-template-rows: 1fr 1fr; 
-  gap: 10px; 
-  grid-template-areas: 
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  grid-template-areas:
     "img-acc img-camp img-geol"
     "img-gm img-perf img-geol";
 }
 
-#accesos { grid-area: img-acc; }
-#campamento { grid-area: img-camp; }
-#geologia { grid-area: img-geol; }
-#geologia-muestreo { grid-area: img-gm; }
-#perforacion-dhh { grid-area: img-perf; }
+@media (max-width: 850px) {
+  .historia-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    grid-template-areas:
+      "img-acc  img-geol"
+      "img-camp img-geol"
+      "img-gm   img-perf";
+  }
+}
 
-.grid-image.alto{
+@media (max-width: 600px) {
+  .historia-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+#accesos {
+  grid-area: img-acc;
+}
+#campamento {
+  grid-area: img-camp;
+}
+#geologia {
+  grid-area: img-geol;
+}
+#geologia-muestreo {
+  grid-area: img-gm;
+}
+#perforacion-dhh {
+  grid-area: img-perf;
+}
+
+.grid-image.alto {
   height: 260px;
 }
 
@@ -642,24 +685,24 @@ p.subtit-actualidad{
   transform: scale(1.1);
 }
 
-@supports(object-fit: cover){
-  .grid-image img{
+@supports (object-fit: cover) {
+  .grid-image img {
     height: 100%;
     object-fit: cover;
     object-position: center center;
   }
 }
 
-.listgrid{
+.listgrid {
   position: sticky;
 }
 
-.grid-image{
+.grid-image {
   line-height: 0;
   overflow: hidden;
 }
 
-.list-title{
+.list-title {
   font-size: 2rem;
   text-decoration: none;
   z-index: 1;
@@ -669,8 +712,8 @@ p.subtit-actualidad{
   top: 0;
   left: 0;
   opacity: 0;
-  transition: opacity .5s;
-  background: rgb(27 15 68 / 32%);
+  transition: opacity 0.5s;
+  background: rgb(27 15 68 / 30%);
   color: white;
   display: flex;
   align-items: center;
@@ -685,8 +728,7 @@ p.subtit-actualidad{
   filter: blur(2px);
 }
 
-
-@media (hover: none) { 
+@media (hover: none) {
   .list-title {
     opacity: 1;
   }
@@ -695,15 +737,13 @@ p.subtit-actualidad{
   }
 }
 
-
-h2.hist-acc{
+h2.hist-acc {
   text-align: center;
   color: var(--segundo);
   margin-bottom: 15px;
 }
 
-
-.haccesos{
+.haccesos {
   display: flex;
   width: 100%;
   justify-content: space-around;
@@ -711,13 +751,12 @@ h2.hist-acc{
   margin: auto;
 }
 
-.haccesos .slide img{
+.haccesos .slide img {
   width: 390px;
   height: 300px;
   margin-bottom: 10px;
   object-fit: cover;
 }
-
 
 /**********FIN ****************/
 
@@ -741,7 +780,7 @@ h2.hist-acc{
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -752,7 +791,9 @@ h2.hist-acc{
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -762,3 +803,17 @@ h2.hist-acc{
   background-color: var(--primero);
 }
 
+@media (max-width: 440px) {
+  h1 a {
+    font-size: 16px;
+  }
+
+  .checkbtn {
+    font-size: 13px;
+    margin-top: 20px;
+  }
+
+  h1.tit.parte {
+    font-size: 16px;
+  }
+}
