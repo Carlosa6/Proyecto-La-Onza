@@ -817,3 +817,17 @@ h2.hist-acc {
     font-size: 16px;
   }
 }
+
+/************Button Atras *******/
+.lefts1 {
+  width: 49px;
+  height: 30px;
+  color: white;
+}
+.lefts2 {
+  text-align: center;
+  color: var(--primero);
+}
+.lefts3 {
+  background-color: var(--primero);
+}

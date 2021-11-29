@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Proyecto La Onza</title>
     <!-- Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
     <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div class="container">
       <nav class="nav-main">
-        <input type="checkbox" id="check">
+        <input type="checkbox" id="check" />
         <label for="check" class="checkbtn">
           <i class="fas fa-bars"></i>
         </label>
@@ -27,102 +31,184 @@
             <a class="lang menu" key="inicio" href="index.html">Inicio</a>
           </li>
           <li>
-            <a class="lang menu" key="compania" href="compania.html">Compañía</a>
+            <a class="lang menu" key="compania" href="compania.html"
+              >Compañía</a
+            >
           </li>
           <li>
-            <a class="lang menu" key="proyecto" href="historia.html">Proyecto La Onza</a>
+            <a class="lang menu" key="proyecto" href="historia.html"
+              >Proyecto La Onza</a
+            >
           </li>
           <li>
-            <a class="lang menu" key="actualidad" href="actualidad.html">Actualidad</a>
+            <a class="lang menu" key="actualidad" href="actualidad.html"
+              >Actualidad</a
+            >
           </li>
           <li>
-            <a class="lang menu" key="contactanos" href="contactanos.html">Contáctanos</a>
+            <a class="lang menu" key="contactanos" href="contactanos.html"
+              >Contáctanos</a
+            >
           </li>
           <div class="dropdown">
-            <button class="dropbtn"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-globe" viewBox="0 0 16 16">
+            <button class="dropbtn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-globe"
+                viewBox="0 0 16 16"
+              >
                 <path
-                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z" />
-              </svg></button>
+                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"
+                />
+              </svg>
+            </button>
             <div class="dropdown-content">
               <a class="translate" id="es">ESP</a>
               <a class="translate" id="en">ENG</a>
-    
             </div>
           </div>
         </ul>
       </nav>
-        <hr>
+      <hr />
 
-        <section class="compania" id="historia">
-            <h1 class="tit-parte"><div class="lang" key="titulo2">Compañía</div></h1>
+      <section class="compania" id="historia">
+        <h1 class="tit-parte">
+          <div class="lang" key="titulo2">Compañía</div>
+        </h1>
 
-            <div class="personas">
-                <div class="gerente">
-                    <h4 class="subtit"><div class="lang" key="gerente">Gerente General</div></h4>
-                    <p>Moisés Campos Haro</p>
-                </div>
+        <div class="personas">
+          <div class="gerente">
+            <h4 class="subtit">
+              <div class="lang" key="gerente">Gerente General</div>
+            </h4>
+            <p>Moisés Campos Haro</p>
+          </div>
 
-                <div class="directores">
-                    <h4 class="subtit"><div class="lang" key="director">Directores</div></h4>
-                    <ul>
-                        <li>Héctor Francisco Paredes Tarazona – <b class="lang" key="presidente">Presidente del Directorio</b></li>
+          <div class="directores">
+            <h4 class="subtit">
+              <div class="lang" key="director">Directores</div>
+            </h4>
+            <ul>
+              <li>
+                Héctor Francisco Paredes Tarazona –
+                <b class="lang" key="presidente">Presidente del Directorio</b>
+              </li>
 
-                        <li>Óscar Edmundo Malpartida Vásquez – <b class="lang" key="directo">Director</b></li>
+              <li>
+                Óscar Edmundo Malpartida Vásquez –
+                <b class="lang" key="directo">Director</b>
+              </li>
 
-                        <li>Moisés Campos Haro – <b class="lang" key="directo">Director</b></li>
+              <li>
+                Moisés Campos Haro – <b class="lang" key="directo">Director</b>
+              </li>
 
-                        <li>Josué Benhur Vidal Paredes – <b class="lang" key="directo">Director</b></li>
+              <li>
+                Josué Benhur Vidal Paredes –
+                <b class="lang" key="directo">Director</b>
+              </li>
 
-                        <li>Edita López Silva  - <b class="lang" key="directo">Director</b></li>
+              <li>
+                Edita López Silva - <b class="lang" key="directo">Director</b>
+              </li>
 
-                        <li>Filomeno Neiser Rosas Genovéz – <b class="lang" key="directo">Director</b></li>
-                    </ul>
-                </div>
+              <li>
+                Filomeno Neiser Rosas Genovéz –
+                <b class="lang" key="directo">Director</b>
+              </li>
+            </ul>
+          </div>
 
-                <div class="socios">
-                    <h4 class="subtit"><div class="lang" key="socio">Socios</div></h4>
-                    <ul>
-                        <li>Héctor Francisco Paredes Tarazona</li>
-                        <li>Moisés Campos Haro</li>
-                        <li>Josué Benhur Vidal Paredes</li>
-                        <li>Edita López Silva</li>
-                        <li>Filomeno Neiser Rosas Genovéz</li>
-                        <li>Eliseo Campos Haro</li>
-                        <li>Fernando Copaira Ortiz</li>
-                        <li>Hein Richard Vigo Burnes</li>
-                    </ul>
-                </div>
-            </div>
+          <div class="socios">
+            <h4 class="subtit"><div class="lang" key="socio">Socios</div></h4>
+            <ul>
+              <li>Héctor Francisco Paredes Tarazona</li>
+              <li>Moisés Campos Haro</li>
+              <li>Josué Benhur Vidal Paredes</li>
+              <li>Edita López Silva</li>
+              <li>Filomeno Neiser Rosas Genovéz</li>
+              <li>Eliseo Campos Haro</li>
+              <li>Fernando Copaira Ortiz</li>
+              <li>Hein Richard Vigo Burnes</li>
+            </ul>
+          </div>
+        </div>
 
-            <h1 class="tit-parte"><div class="lang" key="resume">Resumen</div></h1>
+        <h1 class="tit-parte"><div class="lang" key="resume">Resumen</div></h1>
 
-            <div class="resumen">
-                <div class="parte1">
-                    <p class="lang" key="part1">La Onza es un proyecto minero que inició el año 2016 con el cateo de 11 vetas mineralizadas, llegando a 25 en la actualidad. Se ubica en el departamento de La Libertad, provincia de Pataz, distrito de Tayabamba, comunidad campesina La Victoria, dentro de la unidad geotectónica de la Cordillera Oriental; comprende 4211 hectáreas de denuncios mineros cuyo titular es Compañía Minera La Onza S.A.</p>
-                </div>
+        <div class="resumen">
+          <div class="parte1">
+            <p class="lang" key="part1">
+              La Onza es un proyecto minero que inició el año 2016 con el cateo
+              de 11 vetas mineralizadas, llegando a 25 en la actualidad. Se
+              ubica en el departamento de La Libertad, provincia de Pataz,
+              distrito de Tayabamba, comunidad campesina La Victoria, dentro de
+              la unidad geotectónica de la Cordillera Oriental; comprende 4211
+              hectáreas de denuncios mineros cuyo titular es Compañía Minera La
+              Onza S.A.
+            </p>
+          </div>
 
-                <div class="parte2">
-                    <p class="lang" key="part2">En la actualidad La Onza se encuentra en la fase de prefactibilidad (exploración local), durante la cual se realizó:</p>
-                    <ul class="list-romanos">
-                        <li  class="lang" key="part3">Cartografiado geológico a escala local, a lo largo de 730 hectáreas</li>
-                        <li  class="lang" key="part4">Muestreo de rocas en superficie a lo largo de 1600 hectáreas, cateos mineros y sondajes diamantinos, obteniendo un total de 637 muestras (incluye 52 muestras QA/QC), identificando vetas mineralizadas con valores de hasta 105,65 g/t Au @ 0,50 m (muestra 8534)</li>
-                        <li  class="lang" key="part5">Levantamiento topográfico de un área aproximada de 9000 m2 (incluyendo cateos mineros) y sensores remotos de un área aproximada de 21 km2</li>
-                        <li  class="lang" key="part6">Pruebas metalúrgicas, de dos grupos de muestras, uno de óxidos y otro de sulfuros, obteniendo en ambos casos recuperaciones de entre 83 y 91%, con un consumo óptimo de reactivos</li>
-                        <li  class="lang" key="part7">Geofísica, usando los métodos de polarización inducida y magnetometría, a lo largo de 10,5 km (21 líneas de 500 m), a partir de la cual se identificaron posibles zonas de interés que sirvieron para definir el programa de perforación diamantina</li>
-                        <li  class="lang" key="part8">Perforación de 3 sondajes diamantinos, con 1120 m perforados en total, reconociendo vetas mineralizadas con valores de hasta 6,7 g/t Au @ 0,55 m (muestra 8651 del sondaje DDH-LO18-01)</li>
-                        <li  class="lang" key="part9">Espectrometría con TerraSpec de 42 muestras de roca alterada, obteniendo como resultado la marcada presencia de alteración clorítica y en menor grado carbonatización, silicificación y sericitización</li>
-                        <li  class="lang" key="part10">Petromineragrafía de muestras de sondajes, dentro la cual se consideró el estudio mineragráfico de 4 muestras con las que se definió la paragénesis, soportada por los coeficientes de correlación de Pearson, y el estudio petrográfico de 4 muestras con las que se clasificó a las rocas metamórficas como neis y se identificó la alteración sericítica de las rocas de caja.</li>
-                    </ul>
-                </div>
-                
-            </div>
-
-        </section>
-
+          <div class="parte2">
+            <p class="lang" key="part2">
+              En la actualidad La Onza se encuentra en la fase de
+              prefactibilidad (exploración local), durante la cual se realizó:
+            </p>
+            <ul class="list-romanos">
+              <li class="lang" key="part3">
+                Cartografiado geológico a escala local, a lo largo de 730
+                hectáreas
+              </li>
+              <li class="lang" key="part4">
+                Muestreo de rocas en superficie a lo largo de 1600 hectáreas,
+                cateos mineros y sondajes diamantinos, obteniendo un total de
+                637 muestras (incluye 52 muestras QA/QC), identificando vetas
+                mineralizadas con valores de hasta 105,65 g/t Au @ 0,50 m
+                (muestra 8534)
+              </li>
+              <li class="lang" key="part5">
+                Levantamiento topográfico de un área aproximada de 9000 m2
+                (incluyendo cateos mineros) y sensores remotos de un área
+                aproximada de 21 km2
+              </li>
+              <li class="lang" key="part6">
+                Pruebas metalúrgicas, de dos grupos de muestras, uno de óxidos y
+                otro de sulfuros, obteniendo en ambos casos recuperaciones de
+                entre 83 y 91%, con un consumo óptimo de reactivos
+              </li>
+              <li class="lang" key="part7">
+                Geofísica, usando los métodos de polarización inducida y
+                magnetometría, a lo largo de 10,5 km (21 líneas de 500 m), a
+                partir de la cual se identificaron posibles zonas de interés que
+                sirvieron para definir el programa de perforación diamantina
+              </li>
+              <li class="lang" key="part8">
+                Perforación de 3 sondajes diamantinos, con 1120 m perforados en
+                total, reconociendo vetas mineralizadas con valores de hasta 6,7
+                g/t Au @ 0,55 m (muestra 8651 del sondaje DDH-LO18-01)
+              </li>
+              <li class="lang" key="part9">
+                Espectrometría con TerraSpec de 42 muestras de roca alterada,
+                obteniendo como resultado la marcada presencia de alteración
+                clorítica y en menor grado carbonatización, silicificación y
+                sericitización
+              </li>
+              <li class="lang" key="part10">
+                Petromineragrafía de muestras de sondajes, dentro la cual se
+                consideró el estudio mineragráfico de 4 muestras con las que se
+                definió la paragénesis, soportada por los coeficientes de
+                correlación de Pearson, y el estudio petrográfico de 4 muestras
+                con las que se clasificó a las rocas metamórficas como neis y se
+                identificó la alteración sericítica de las rocas de caja.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </div>
-    
-
 
     <!--SCROLLREVEAL-->
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -130,6 +216,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="dist/script.js" charset="utf-8"></script>
-</body>
-
+  </body>
 </html>
