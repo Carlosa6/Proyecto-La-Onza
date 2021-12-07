@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
-  <body>
+  <body onload="myOnLoad()">
     <div class="container">
       <nav class="nav-main">
         <input type="checkbox" id="check" />
@@ -85,7 +85,7 @@
       <div class="haccesos" id="perforaciondhh"></div>
       <br />
       <div class="lefts2">
-        <button class="lefts3" onclick="window.history.back();">
+        <button class="lefts3" id="back">
           <span
             ><svg
               class="lefts1"
@@ -101,8 +101,7 @@
               <path
                 fill="currentColor"
                 d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"
-              ></path></svg
-          ></span>
+              ></path></svg></span>
         </button>
       </div>
       <br />
@@ -113,6 +112,7 @@
     <script src="dist/main-parte1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="dist/onloads.js"></script>
     <script src="dist/script.js" charset="utf-8"></script>
     <script>
       function cargarImagenes() {
